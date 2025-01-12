@@ -18,32 +18,42 @@ This project is a **Rental System** application designed to manage product reser
 
 ## Installation
 
-### Backend (Spring Boot)
+## Backend (Spring Boot)
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/HamzaKh46/MaterialRent.git
-   
-   ```bash
    cd backend
-   
+   ```
+
+2. Install dependencies:
    ```bash
    mvn install
-   
+   ```
+
+3. Run the Spring Boot application:
    ```bash
    mvn spring-boot:run
+   ```
 
-### Frontend (Angular)
-```bash
-cd frontend
+## Frontend (Angular)
 
-```bash
-npm install
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
 
-```bash
-npm start
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The application will be available at http://localhost:4200.
+3. Start the Angular application:
+   ```bash
+   npm start
+   ```
+
+The application will be available at [http://localhost:4200](http://localhost:4200).
 
 
 
