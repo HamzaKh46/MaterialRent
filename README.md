@@ -16,4 +16,30 @@ This project is a **Rental System** application designed to manage product reser
 - **Database**: MySQL
 - **Authentication**: JWT (JSON Web Token) for stateless authentication
 
+## Installation
+
+### Backend (Spring Boot)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HamzaKh46/MaterialRent.git
+
+   cd backend
+
+   mvn install
+
+   mvn spring-boot:run
+
+### Frontend (Angular)
+
+cd frontend
+
+npm install
+
+npm start
+
+The application will be available at http://localhost:4200.
+
+
+
 
