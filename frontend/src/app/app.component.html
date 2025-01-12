@@ -1,0 +1,79 @@
+<nz-layout>
+  <nz-sider nzCollapsible nzWidth="200px" *ngIf="!isAdminLoggedIn && !isStudentLoggedIn">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/register">
+        <span nz-icon nzType="user"></span>
+        <span><strong>Register</strong></span>
+      </li>
+
+      <li nz-menu-item routerLink="/">
+        <span nz-icon nzType="login"></span>
+        <span><strong>Login</strong></span>
+      </li>
+
+    </ul>
+  </nz-sider>
+  <nz-sider nzCollapsible nzWidth="200px" *ngIf="isAdminLoggedIn">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/admin/product">
+        <span nz-icon nzType="product"></span>
+        <span><strong>Post Product</strong></span>
+      </li>
+      <li nz-menu-item routerLink="/admin/products">
+        <span nz-icon nzType="product"></span>
+        <span><strong>Products</strong></span>
+      </li>
+
+      <li nz-menu-item routerLink="/admin/search">
+        <span nz-icon nzType="product"></span>
+        <span><strong>Search</strong></span>
+      </li>
+
+      <li nz-menu-item routerLink="/admin/reservations">
+        <span nz-icon nzType="pull-request"></span>
+        <span><strong>Reservations</strong></span>
+      </li>
+
+      <li nz-menu-item (click)="logout()">
+        <span nz-icon nzType="logout"></span>
+        <span><strong>Logout</strong></span>
+      </li>
+
+    </ul>
+  </nz-sider>
+  <nz-sider nzCollapsible nzWidth="200px" *ngIf="isStudentLoggedIn">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/student/products">
+        <span nz-icon nzType="product"></span>
+        <span><strong>Products</strong></span>
+      </li>
+
+      <li nz-menu-item routerLink="/student/bookings">
+        <span nz-icon nzType="pull-request"></span>
+        <span><strong>Bookings</strong></span>
+      </li>
+
+      <li nz-menu-item routerLink="/student/product/search">
+        <span nz-icon nzType="pull-request"></span>
+        <span><strong>Search</strong></span>
+      </li>
+
+      <li nz-menu-item (click)="logout()">
+        <span nz-icon nzType="logout"></span>
+        <span><strong>Logout</strong></span>
+      </li>
+
+    </ul>
+  </nz-sider>
+
+  <nz-layout>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+    <nz-footer></nz-footer>
+  </nz-layout>
+
+</nz-layout>

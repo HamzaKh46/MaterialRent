@@ -1,0 +1,25 @@
+.center-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: #f0f2f5;
+    flex-direction: column;
+}
+
+.page-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #061729;
+}
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.pagination{
+    float: right;
+    margin-top: 10px;
+}

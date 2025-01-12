@@ -1,0 +1,33 @@
+<div class="product-details-form-container">
+
+    <nz-form nzLayout="vertical" class="product-details-form" [formGroup] = "productDetailsForm">
+        <div class="form-title">Enter Product Details
+
+        </div>
+
+        <nz-form-item>
+            <nz-form-control [nzSpan]="16" [nzOffset]="4">
+                <input nz-input formControlName="name" nzSize="large" placeHolder="Product Name"/>
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-control [nzSpan]="16" [nzOffset]="4">
+                <input nz-input formControlName="type" nzSize="large" placeHolder="Product Type"/>
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-control [nzSpan]="16" [nzOffset]="4">
+                <input nz-input formControlName="price" nzSize="large" placeHolder="Product Price"/>
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-label nz-form-item-control [nzSpan]="11" [nzOffset]="4">
+                <button nz-button nzType="primary" type="submit" (click)="submitForm()">Save</button>
+            </nz-form-label>
+        </nz-form-item>
+
+    </nz-form>
+</div>

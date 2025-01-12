@@ -1,0 +1,62 @@
+
+
+<div class="inner-content">
+    <nz-spin [nzSpinning]="isSpinning" [nzSize]="'large'" nzTip="Working...">
+        <div class="dashboard-filter">
+          <div class="filter-grid" [formGroup]="searchProductForm">
+            <div class="filter-select-dropdown filter-fields-width">
+      
+              <!-- <nz-form-item>
+                <nz-form-label nzFor="gender">Name</nz-form-label>
+                <nz-form-control nzErrorTip="This Input Is Required!">
+                  <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a Name" formControlName="name">
+                    <nz-option *ngFor="let name of listOfNames" nzLabel={{name}} nzValue={{name}}></nz-option>
+                  </nz-select>
+                </nz-form-control>
+              </nz-form-item> -->
+      
+              <nz-form-item>
+                <nz-form-label nzFor="studentClass">Type</nz-form-label>
+                <nz-form-control nzErrorTip="This Input Is Required!">
+                  <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a Type" formControlName="type">
+                    <nz-option *ngFor="let type of listOfType" nzLabel={{type}} nzValue={{type}}></nz-option>
+                  </nz-select>
+                </nz-form-control>
+              </nz-form-item>
+
+              <!-- <nz-form-item>
+                <nz-form-label nzFor="price">Price</nz-form-label>
+                <nz-form-control nzErrorTip="This Input Is Required!">
+                  <input nz-input type="number" formControlName="price" placeholder="Enter Price" />
+                </nz-form-control>
+              </nz-form-item> -->
+      
+            </div>
+
+            <div>
+                <button class="filterBtn" nz-button nzType="primary" (click)="searchProduct()">Search Product</button>
+            </div>
+          </div>
+        </div>
+      </nz-spin>
+      
+</div>
+
+
+<div style="background-color: #F8F8F8;">
+    <div class="child" style="padding-bottom: 30px;" *ngFor="let product of products">
+        <div nz-row>
+            <div nz-col nzSpan="16">
+                <h2 style="cursor: pointer; color: #108ee9;">
+                    {{product.name}} - {{product.type}}
+                </h2>
+                <hr>
+                <p>Price: {{product.price}}</p>
+        
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
