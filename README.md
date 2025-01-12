@@ -23,19 +23,19 @@ This project is a **Rental System** application designed to manage product reser
 1. Clone the repository:
    ```bash
    git clone https://github.com/HamzaKh46/MaterialRent.git
-
+   ```bash
    cd backend
-
+   ```bash
    mvn install
-
+   ```bash
    mvn spring-boot:run
 
 ### Frontend (Angular)
-
+```bash
 cd frontend
-
+```bash
 npm install
-
+```bash
 npm start
 
 The application will be available at http://localhost:4200.
